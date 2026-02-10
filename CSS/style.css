@@ -1,0 +1,15 @@
+.language-switcher {
+    margin-left: auto;
+    padding: 5px;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--main-background);
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+
+.language-switcher:hover {
+    background-color: var(--primary-blue);
+    color: white;
+}

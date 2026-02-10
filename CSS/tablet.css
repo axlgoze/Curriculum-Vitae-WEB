@@ -162,6 +162,13 @@
 .formcontato__textarea{
     width: 100%;
 }
+
+.language-switcher {
+    font-size: 1.6rem;
+    padding: 8px;
+    margin-right: 20px;
+}
+
 .zoom:hover{
     transform: scale(1.1);
 }

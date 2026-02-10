@@ -14,24 +14,34 @@
     <!-- Fonte del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <title> Mi Portafolio</title>
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Mi Portafolio - Reyes Flores Brayan Axel">
+    <meta property="og:description" content="Descubre mi portafolio web, donde muestro mis habilidades, proyectos y experiencia en desarrollo web.">
+    <meta property="og:image" content="assets/perfilsinfondo.png">
+    <meta property="og:url" content="https://axlgoze.github.io/Curriculum-Vitae-WEB/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
 </head>
 <body>
-    <!-- Sección del Menú  -->
+    <!-- Menu -->
     <div class="tudo">
     <section class="menu">
         <header class="menu__header">
-                <img src="assets/planet.png">
-                <h3 class="menu__title">Reyes Flores Brayan Axel</h3>
-                <li class="menu__list__item__contato"><a href="mailto:rbaxel.f@gmail.com">rbaxel.f@gmail.com</a></li>
+            <img src="assets/planet.png" alt="saturn planet">
+            <h3 class="menu__title" data-translate="menuTitle">Reyes Flores Brayan Axel / Fullstack Developer</h3>
+            <li class="menu__list__item__contato"><a href="mailto:rbaxel.f@gmail.com" data-translate="contactEmail">rbaxel.f@gmail.com</a></li>
+            <select id="languageSwitcher" class="language-switcher">
+                <option value="es">🇲🇽</option>
+                <option value="en">🇺🇸</option>
+            </select>
         </header>
-        <nav class="main-nav">
+        <nav class="main-nav" role="navigation">
             <ul class="menu__list">
-                <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
-                <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                <li class="menu__list__item"><a href="#competencias">Competencias</a></li>
-                <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
-                <!-- <li class="menu__list__item"><a href="#contacto">Contacto@fulana.com</a></li> -->
+                <li class="menu__list__item"><a href="#sobre-mi" data-translate="aboutMe">Sobre mi</a></li>
+                <li class="menu__list__item"><a href="#skills" data-translate="skills">Habilidades</a></li>
+                <li class="menu__list__item"><a href="#competencias" data-translate="competencies">Competencias</a></li>
+                <li class="menu__list__item"><a href="#formacion" data-translate="education">Formación</a></li>
+                <li class="menu__list__item"><a href="#xp" data-translate="projects">Proyectos</a></li>
             </ul>  
         </nav>
     </section>
@@ -39,16 +49,16 @@
     <!-- Sección del Header/Title/Hero -->
     <section class="title">
         <div class="title__div">
-            <img class="title__profile" src="assets/perfilsinfondo.png" alt="foto de perfil">
+            <img class="title__profile" src="assets/perfilsinfondo.png" alt="profile photo">
             <div class="title__container">
-                <h2 class="title__bio">Hola, mi nombre es Axel y construyo páginas web.</h2>
-                <h3 class="title__subsection">Apasionado entusiasta por el desarrollo web, actualmente estoy por terminar mis estudios de la carrera  <i class="title__subsection--bold">Lic. en Ciencias de la Informática</i> en <i class="title__subsection--bold">UPIICSA</i>  del <i class="title__subsection--italic">instituto politécnico nacional</i>, trabajando en mi portafolio y continuando con mi aprendizaje de manera autodidacta.</h3>
+                <h2 class="title__bio" data-translate="titleBio">Hola, mi nombre es Axel y construyo páginas web.</h2>
+                <h3 class="title__subsection" data-translate="titleSubsection">Apasionado entusiasta por el desarrollo web, <i class="title__subsection--bold">Lic. en Ciencias de la Informática</i> en <i class="title__subsection--bold">UPIICSA</i> del <i class="title__subsection--italic">instituto politécnico nacional</i>, actualmente trabajando en mi <span> <a href="https://github.com/axlgoze">portafolio</a></span> y continuando con mi aprendizaje de manera autodidacta.</h3>
                 <ul class="title__network">
                      <!-- Pon los enlaces de tus redes sociales favoritas -->
-                    <li class="title__network__item"><a href="https://github.com/axlgoze">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/axl-reyes-b6914b219">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="https://www.instagram.com/axlze/">Instagram <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="https://axlgoze.github.io/my_launchx_blog/">Blog <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="https://github.com/axlgoze">Github <img src="assets\arrow.png" alt="Arrowed social media link"> </a></li>
+                    <li class="title__network__item"><a href="https://www.linkedin.com/in/axl-reyes-b6914b219">Linkedin <img src="assets\arrow.png" alt="Arrowed social media link"></a></li>
+                    <li class="title__network__item"><a href="https://www.instagram.com/axlze/">Instagram <img src="assets\arrow.png" alt="Arrowed social media link"></a></li>
+                    <li class="title__network__item"><a href="https://axlgoze.github.io/my_launchx_blog/">Blog <img src="assets\arrow.png" alt="Arrowed social media link"></a></li>
                 </ul>
             </div>
         </div>
@@ -57,138 +67,134 @@
     <!-- Sección sobre mi -->
     <section class="about" id="sobre-mi">
         <div class="about__container">
-            <h3 class="about__title">Sobre mi</h3>
-            <p class="about__paragraph">Enfocado en lograr ser un desarrollador Fullstack con preferencia por el front-end. Mis lenguajes predilectos son: HTML, CSS y JavaScript.</p>
-            <br>
-            <p class="about__paragraph">Soy una persona responsable que se preocupa por entregar buenos resultados, tengo varios hobbies como la escritura, lectura, dibujo, pintura, estar en constante aprendizaje y tocar el piano sin olvidar el gusto por el diseño UI/UX.</p>
-            <!-- Si quieres, pon tú firma acá! -->
-            <!-- <img src="assets\signature.png"> -->
+            <h3 class="about__title" data-translate="aboutTitle">Sobre mi</h3>
+            <p class="about__paragraph" data-translate="aboutParagraph">Desarrollador Fullstack con énfasis en Front-end (JavaScript, HTML, CSS). Mi enfoque combina la sensibilidad estética por el diseño UI/UX con la evolución técnica hacia soluciones Cloud. Soy un profesional orientado a resultados, comprometido con la calidad del código y en constante evolución técnica.</p>
         </div>
     </section>
 
     <!-- Sección de Skills -->
     <div class="secciones">
     <section class="skills" id="skills">
-        <h3 class="skills__title">Skills</h3>
+        <h3 class="skills__title" data-translate="skillsTitle">Skills</h3>
             <div class="skills__line">
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"><img src="assets\html-5.png"></li>
+                        <li class="skills__img"><img src="assets\html-5.png" alt="html logo"></li>
                         <li class="skills__name"> HTML</li>
                     </ul>
                 </div>
 
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\js.png" alt=""></li>
+                        <li class="skills__img"> <img src="assets\js.png" alt="js logo"></li>
                         <li class="skills__name">Javascript</li>
                     </ul>
                 </div>
 
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\css-3.png" alt=""></li>
+                        <li class="skills__img"> <img src="assets\css-3.png" alt="css logo"></li>
                         <li class="skills__name">CSS</li>
                     </ul>
                 </div>
 
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"><img src="assets\git.png" alt=""></li>
+                        <li class="skills__img"><img src="assets\git.png" alt="git logo"></li>
                         <li class="skills__name">GIT</li>
                     </ul>
                 </div>
 
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\wordpress.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\wordpress.png" alt="wordpress logo"> </li>
                         <li class="skills__name">Wordpress</li>
                     </ul>
                 </div>
 
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\excel.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\excel.png" alt="excel logo"> </li>
                         <li class="skills__name">Excel</li>
                     </ul>
                 </div>
 
-                <div class="skills__box zoom">
+                <!-- <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\bizagi.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\bizagi.png" alt="bizagi logo"> </li>
                         <li class="skills__name">Bizagi</li>
                     </ul>
-                </div>
+                </div> -->
 
-                <div class="skills__box zoom">
+                <!-- <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\java.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\java.png" alt="java logo"> </li>
                         <li class="skills__name">Java</li>
                     </ul>
-                </div>
+                </div> -->
 
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\jest.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\jest.png" alt="jest logo"> </li>
                         <li class="skills__name">Jest</li>
                     </ul>
                 </div>
 
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\gnu-bash.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\gnu-bash.png" alt="console logo"> </li>
                         <li class="skills__name">bash/zsh</li>
                     </ul>
                 </div>
 
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\figma.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\figma.png" alt="figma logo"> </li>
                         <li class="skills__name">Figma</li>
                     </ul>
                 </div>
 
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\illustrator.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\illustrator.png" alt="illustrator logo"> </li>
                         <li class="skills__name">Illustrator</li>
                     </ul>
                 </div>
 
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\sql.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\sql.png" alt="sql logo"> </li>
                         <li class="skills__name">SQL</li>
                     </ul>
                 </div>
 
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\uml.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\uml.png" alt="uml logo"> </li>
                         <li class="skills__name">UML</li>
                     </ul>
                 </div>
 
                 <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img node"> <img src="assets\nodejs.png" alt=""> </li>
+                        <li class="skills__img node"> <img src="assets\nodejs.png" alt="node js logo"> </li>
                         <li class="skills__name">node JS</li>
                     </ul>
                 </div>
 
-                <div class="skills__box zoom">
+                <!-- <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\docker.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\docker.png" alt="docker logo"> </li>
                         <li class="skills__name">Docker</li>
                     </ul>
-                </div>
+                </div> -->
 
-                <div class="skills__box zoom">
+                <!-- <div class="skills__box zoom">
                     <ul>
-                        <li class="skills__img"> <img src="assets\python.png" alt=""> </li>
+                        <li class="skills__img"> <img src="assets\python.png" alt="python logo"> </li>
                         <li class="skills__name">Python</li>
                     </ul>
-                </div>
+                </div> -->
 
 
         </div>
@@ -196,89 +202,89 @@
 
     <!-- Sección de competencias -->
     <section class="competencias" id="competencias">
-        <h3 class="competencias__title">Competencias</h3>
+        <h3 class="competencias__title" data-translate="competenciesTitle">Competencias</h3>
             <div class="competencias__line">
                 <div class="competencias__box zoom">
                     <ul>
-                        <li class="competencias__img"><img src="assets\team.png"></li>
-                        <li class="competencias__name">Trabajo en equipo</li>
+                        <li class="competencias__img"><img src="assets\team.png" alt="team work illustration"></li>
+                        <li class="competencias__name" data-translate="teamwork">Trabajo en equipo</li>
                     </ul>
                 </div>
 
-                <div class="competencias__box zoom">
+                <!-- <div class="competencias__box zoom">
                     <ul>
-                        <li class="competencias__img"> <img src="assets\learn.png" alt=""></li>
+                        <li class="competencias__img"> <img src="assets\learn.png" alt="learning illustration"></li>
                         <li class="competencias__name">Aprendizaje rápido</li>
                     </ul>
-                </div>
+                </div> -->
 
                 <div class="competencias__box zoom">
                     <ul>
-                        <li class="competencias__img"> <img src="assets\responsibility.png" alt=""></li>
-                        <li class="competencias__name">Responsable</li>
+                        <li class="competencias__img"> <img src="assets\responsibility.png" alt="hand in illustration"></li>
+                        <li class="competencias__name" data-translate="responsibility">Responsable</li>
                     </ul>
                 </div>
 
                 <div class="competencias__box zoom">
                     <ul>
-                        <li class="competencias__img"><img src="assets\analysis.png" alt=""></li>
-                        <li class="competencias__name">Abtracción y Analísis</li>
+                        <li class="competencias__img"><img src="assets\analysis.png" alt="graphs illustration"></li>
+                        <li class="competencias__name" data-translate="analysis">Abtracción y Analísis</li>
                     </ul>
                 </div>
 
                 <div class="competencias__box zoom">
                     <ul>
-                        <li class="competencias__img"> <img src="assets\leadership.png" alt=""> </li>
-                        <li class="competencias__name">Liderazgo</li>
+                        <li class="competencias__img"> <img src="assets\leadership.png" alt="lidership illustration"> </li>
+                        <li class="competencias__name" data-translate="leadership">Liderazgo</li>
                     </ul>
                 </div>
 
                 <div class="competencias__box zoom">
                     <ul>
-                        <li class="competencias__img"> <img src="assets\goal.png" alt=""> </li>
-                        <li class="competencias__name">Orientación por metas</li>
+                        <li class="competencias__img"> <img src="assets\goal.png" alt="target illustration"> </li>
+                        <li class="competencias__name" data-translate="goalOriented">Orientación por metas</li>
                     </ul>
                 </div>
 
-                <div class="competencias__box zoom">
+                <!-- <div class="competencias__box zoom">
                     <ul>
-                        <li class="competencias__img"> <img src="assets\transparency.png" alt=""> </li>
+                        <li class="competencias__img"> <img src="assets\transparency.png" alt="magnifying glass illustration"> </li>
                         <li class="competencias__name">Pensamiento <i class="title__subsection--italic">Big picture</i></li>
                     </ul>
-                </div>
+                </div> -->
 
                 <div class="competencias__box zoom">
                     <ul>
-                        <li class="competencias__img"> <img src="assets\charity.png" alt=""> </li>
-                        <li class="competencias__name">Empatia</li> 
+                        <li class="competencias__img"> <img src="assets\charity.png" alt=" blue hearth illustration"> </li>
+                        <li class="competencias__name" data-translate="empathy">Empatia</li> 
                     </ul>
                 </div>
 
                 <div class="competencias__box zoom">
                     <ul>
-                        <li class="competencias__img"> <img src="assets\reading.png" alt=""> </li>
-                        <li class="competencias__name">Autodidacta</li>
+                        <li class="competencias__img"> <img src="assets\reading.png" alt="book illustration"> </li>
+                        <li class="competencias__name" data-translate="selfTaught">Autodidacta</li>
                     </ul>
                 </div>
 
                 <div class="competencias__box zoom">
                     <ul>
-                        <li class="competencias__img"> <img src="assets\competitive.png" alt=""> </li>
-                        <li class="competencias__name">Competente</li>
+                        <li class="competencias__img"> <img src="assets\competitive.png" alt="competition illustration"> </li>
+                        <li class="competencias__name" data-translate="competent">Competente</li>
                     </ul>
                 </div>
 
                 <div class="competencias__box zoom">
                     <ul>
-                        <li class="competencias__img"> <img src="assets\strategy.png" alt=""> </li>
-                        <li class="competencias__name">Pensamiento estratégico</li>
+                        <li class="competencias__img"> <img src="assets\strategy.png" alt="canvas illustration"> </li>
+                        <li class="competencias__name" data-translate="StrategicThinking">Pensamiento estratégico</li>
                     </ul>
                 </div>
 
                 <div class="competencias__box zoom">
                     <ul>
-                        <li class="competencias__img"> <img src="assets\creative.png" alt=""> </li>
-                        <li class="competencias__name">Creatividad</li>
+                        <li class="competencias__img"> <img src="assets\creative.png" alt="creativity illustration"> </li>
+                        <li class="competencias__name" data-translate="creativity">Creatividad</li>
                     </ul>
                 </div>
         </div>
@@ -286,21 +292,45 @@
 </div>
         <!-- Sección de Formación académica -->
     <section class="academic" id="formacion">
-        <h2 class="academic__title" >Formación académica</h2>
+        <h2 class="academic__title" data-translate="academicTraining">Formación académica</h2>
         <div class="academic__courses">
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\formacionA.png" width="150px"></li>
-                    <li class="academic__courses__item__title"><h4>Ciencias de la informática</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2018- 2023 - IPN UPIICSA</p></li>
+                    <li class="academic__courses__item__img"><img src="assets\formacionA.png" width="150px" alt="institution logo"></li>
+                    <li class="academic__courses__item__title" data-translate="academicTitle"><h4>Ciencias de la informática</h4></li>
+                    <li class="academic__courses__item__subtitle" data-translate="academicSubtitle"><p>2018- 2023 - IPN UPIICSA</p></li>
                 </ul>
             </div>
-            <h2 class="academic__title">Formación continua</h2>
+            <h2 class="academic__title" data-translate="continuousTraining">Formación continua</h2>
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!-- Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets/lx1.png" width="140px"></li>
+                    <li class="academic__courses__item__img"><img src="assets/desSegCert.png" width="140px" alt="hcia certification"></li>
+                    <li class="academic__courses__item__title" data-translate="SecurityCertification"><h4>Desarrollo Seguro Certification</h4></li>
+                    <li class="academic__courses__item__subtitle"><p>2025 - Developer</p></li>
+                </ul>
+            </div>
+            <div class="academic__courses__box">
+                <ul class="academic__courses__list">
+                    <!-- Pon el logotipo de la institución de formación -->
+                    <li class="academic__courses__item__img"><img src="assets/scrumDevCert.png" width="140px" alt="hcia certification"></li>
+                    <li class="academic__courses__item__title" data-translate="ScrumCertification"><h4>Certificación Scrum</h4></li>
+                    <li class="academic__courses__item__subtitle"><p>2025 - Developer</p></li>
+                </ul>
+            </div>
+            <div class="academic__courses__box">
+                <ul class="academic__courses__list">
+                    <!-- Pon el logotipo de la institución de formación -->
+                    <li class="academic__courses__item__img"><img src="assets/hciaCert.png" width="140px" alt="hcia certification"></li>
+                    <li class="academic__courses__item__title" data-translate="HuaweiCertification"><h4>Certificación HCIA</h4></li>
+                    <li class="academic__courses__item__subtitle"><p>2024 - Huawei</p></li>
+                </ul>
+            </div>
+            <div class="academic__courses__box">
+                <ul class="academic__courses__list">
+                    <!-- Pon el logotipo de la institución de formación -->
+                    <li class="academic__courses__item__img"><img src="assets/lx1.png" width="140px" alt="bootcamp logo"></li>
                     <li class="academic__courses__item__title"><h4>BootCamp Fullstack</h4></li>
                     <li class="academic__courses__item__subtitle"><p>2022 - Microsoft</p></li>
                 </ul>
@@ -308,8 +338,8 @@
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!--Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\one.png" width="150"></li>
-                    <li class="academic__courses__item__title"><h4>Oracle next Education</h4></li>
+                    <li class="academic__courses__item__img"><img src="assets\one.png" width="150" alt="bootcamp logo"></li>
+                    <li class="academic__courses__item__title"><h4>Oracle BootCamp Fullstack</h4></li>
                     <li class="academic__courses__item__subtitle"><p>2022 - Oracle + Alura</p></li>
                 </ul>
             </div>
@@ -317,18 +347,18 @@
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!--Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\platzimobile.PNG" width="150"></li>
+                    <li class="academic__courses__item__img"><img src="assets\platzimobile.PNG" width="150" alt="responsive design course"></li>
                     <li class="academic__courses__item__title"><h4>Responsive design</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2022 - Curso Platzi</p></li>
+                    <li class="academic__courses__item__subtitle"><p>2022</p></li>
                 </ul>
             </div>
 
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!--Pon el logotipo de la institución de formación -->
-                    <li class="academic__courses__item__img"><img src="assets\ss.png" width="100"></li>
-                    <li class="academic__courses__item__title"><h4>Diseño Gráfico Digital</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Mayo - Junio 2018 - Curso</p></li>
+                    <li class="academic__courses__item__img"><img src="assets\ss.png" width="100" alt="ss consulting logo"></li>
+                    <li class="academic__courses__item__title" data-translate="DigitalGD"><h4>Diseño Gráfico Digital</h4></li>
+                    <li class="academic__courses__item__subtitle" data-translate="DigitalGDDate"><p>Mayo - Junio 2018 - Curso</p></li>
                 </ul>
             </div>
         </div>
@@ -336,20 +366,20 @@
 
     <!-- Sección de Experiencia Profesional/Proyectos-->
     <section class="experience" id="xp">
-        <h2 class="experience__section__title">Experiencia Profesional</h2>
+        <h2 class="experience__section__title" data-translate="proffesionalExpSectionTitle">Experiencia Profesional</h2>
         <div class="experience__projects">
             <div class="experience__professional--slider">
             <div class="experiencie__box experience__professional--card">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/vacunapage.PNG" title="Reto CSS consistía en recrear una página web tal cual el diseño mockup y desplegarla en github." width="289" height="144">
+                <img class="experience__img" src="assets/vacunapage.PNG" title="Reto CSS consistía en recrear una página web tal cual el diseño mockup y desplegarla en github." width="289" height="144" alt="vaccination professional experience">
                 
                 <div class="experience__info">
-                    <h2 class="experience__title">Campaña de vacunación</h2>
-                    <h3 class="experience__text">Frontend Challenge - LaunchX</h3>
+                    <h2 class="experience__title" data-translate="proffesionalExpTitle1">Campaña de vacunación</h2>
+                    <h3 class="experience__text" data-translate="proffesionalExpText1">Reto CSS</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/axlgoze/Front_end_mission_CSS"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href="https://axlgoze.github.io/Front_end_mission_CSS/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/axlgoze/Front_end_mission_CSS"><button class="experiencia__botao--repo" data-translate="proffesionalExpRepo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href="https://axlgoze.github.io/Front_end_mission_CSS/"><button class="experience__botao--demo" data-translate="proffesionalExpDemo">Ver demo</button></a></span>
                         </div>
                 </div>
             </div>
@@ -359,59 +389,59 @@
         <!-- <div class="experience__projects"> -->
             <div class="experiencie__box experience__professional--card">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/pokedex.PNG" title="Reto JavaScript que consiste en un buscador de pokemones a través de una conexión con la API oficial." width="289" height="144">
+                <img class="experience__img" src="assets/pokedex.PNG" title="Reto JavaScript que consiste en un buscador de pokemones a través de una conexión con la API oficial." width="289" height="144" alt="pokedex professional experience">
                 
                 <div class="experience__info">
-                    <h2 class="experience__title">Pokedex con HTML, CSS y JS</h2>
-                    <h3 class="experience__text">API Challenge - LaunchX</h3>
+                    <h2 class="experience__title" data-translate="proffesionalExpTitle2">Pokedex</h2>
+                    <h3 class="experience__text" data-translate="proffesionalExpText2">Reto API</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/axlgoze/Front_end_mission_CSS"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href="https://axlgoze.github.io/Front_end_mission_JS/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/axlgoze/Front_end_mission_CSS"><button class="experiencia__botao--repo" data-translate="proffesionalExpRepo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href="https://axlgoze.github.io/Front_end_mission_JS/"><button class="experience__botao--demo" data-translate="proffesionalExpDemo">Ver demo</button></a></span>
                         </div>
                 </div>
             </div>
 
             <div class="experiencie__box experience__professional--card">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/tetra.png" title="Reto JavaScript que consiste en ingresar cualquier texto y mostrarlo encriptado."  width="289" height="144">
+                <img class="experience__img" src="assets/tetra.png" title="Reto JavaScript que consiste en ingresar cualquier texto y mostrarlo encriptado."  width="289" height="144" alt="text encryptation professional experience">
                 
                 <div class="experience__info">
-                    <h2 class="experience__title">Encriptador de texto</h2>
-                    <h3 class="experience__text">Challenge Alura Codificador</h3>
+                    <h2 class="experience__title" data-translate="proffesionalExpTitle3">Encriptador de texto</h2>
+                    <h3 class="experience__text" data-translate="proffesionalExpText3">Reto JavaScript</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href="https://axlgoze.github.io/Encriptador-de-Textos/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/alura-challenges/challenge-one-encriptador-latam"><button class="experiencia__botao--repo"  data-translate="proffesionalExpRepo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href="https://axlgoze.github.io/Encriptador-de-Textos/"><button class="experience__botao--demo"  data-translate="proffesionalExpDemo">Ver demo</button></a></span>
                         </div>
                 </div>
             </div>
 
             <div class="experiencie__box experience__professional--card">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/batt.PNG" title="Práctica CSS que consiste en usar un patrón de diseño MOBILE-FIRST."  width="289" height="144">
+                <img class="experience__img" src="assets/batt.PNG" title="Práctica CSS que consiste en usar un patrón de diseño MOBILE-FIRST."  width="289" height="144" alt="mobile first professional experience">
                 
                 <div class="experience__info">
-                    <h2 class="experience__title">Batata Bit</h2>
-                    <h3 class="experience__text">Práctica Mobile First - Platzi</h3>
+                    <h2 class="experience__title" data-translate="proffesionalExpTitle4">Batata Bit</h2>
+                    <h3 class="experience__text" data-translate="proffesionalExpText4">Reto Mobile first</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/axlgoze/Batata-Bit"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href="https://axlgoze.github.io/Batata-Bit/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/axlgoze/Batata-Bit"><button class="experiencia__botao--repo"  data-translate="proffesionalExpRepo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href="https://axlgoze.github.io/Batata-Bit/"><button class="experience__botao--demo"  data-translate="proffesionalExpDemo">Ver demo</button></a></span>
                         </div>
                 </div>
             </div>
 
             <div class="experiencie__box experience__professional--card">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/playbook.png" title="Practicas backend desarrolladas durante el BootCamp Microsoft Launch X donde se pusieron en práctica tecnologías como: Express, node Js, SQL, prismaDB,  pruebas de unidad con JEST,  y creación de API con postman." width="289" height="144">
+                <img class="experience__img" src="assets/playbook.png" title="Practicas backend desarrolladas durante el BootCamp Microsoft Launch X donde se pusieron en práctica tecnologías como: Express, node Js, SQL, prismaDB,  pruebas de unidad con JEST,  y creación de API con postman." width="289" height="144" alt="node js professional experience">
                 
                 <div class="experience__info">
-                    <h2 class="experience__title">Node Js Playbook</h2>
-                    <h3 class="experience__text">Prácticas Backend - LaunchX</h3>
+                    <h2 class="experience__title" data-translate="proffesionalExpTitle5">Node Js</h2>
+                    <h3 class="experience__text" data-translate="proffesionalExpText5">Reto Backend</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/axlgoze/Playbook"><button class="experiencia__botao--repo">Repositório</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/axlgoze/Playbook"><button class="experiencia__botao--repo" data-translate="proffesionalExpRepo">Repositório</button></a></span>
                                 <!-- <span class="experience__demo"><a href="https://axlgoze.github.io/Batata-Bit/"><button class="experience__botao--demo">Ver demo</button></a></span> -->
                         </div>
                 </div>
@@ -419,90 +449,90 @@
 
             <div class="experiencie__box experience__professional--card">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/barberia.PNG" title="Práctica CSS de una barbería ficticia donde se pusieron a prueba conocimientos de maquetación con HTML, estilos con CSS y uso de MediaQuery para la responsividad del sitio." width="289" height="144">
+                <img class="experience__img" src="assets/barberia.PNG" title="Práctica CSS de una barbería ficticia donde se pusieron a prueba conocimientos de maquetación con HTML, estilos con CSS y uso de MediaQuery para la responsividad del sitio." width="289" height="144" alt="barberia professional experience">
                 
                 <div class="experience__info">
-                    <h2 class="experience__title">Barberia Alura</h2>
-                    <h3 class="experience__text">Práctica frontend - ONE latam</h3>
+                    <h2 class="experience__title" data-translate="proffesionalExpTitle6">Barberia Alura</h2>
+                    <h3 class="experience__text" data-translate="proffesionalExpText6">Reto Frontend</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/axlgoze/Barberia_Alura"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href="https://axlgoze.github.io/Barberia_Alura/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/axlgoze/Barberia_Alura"><button class="experiencia__botao--repo"  data-translate="proffesionalExpRepo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href="https://axlgoze.github.io/Barberia_Alura/"><button class="experience__botao--demo"  data-translate="proffesionalExpDemo">Ver demo</button></a></span>
                         </div>
                 </div>
             </div>
 
             <div class="experiencie__box experience__professional--card">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/nutricion.PNG" title="Práctica Javascript donde se puede buscar pacientes de una tabla a la cual se le puede agregar más elementos gracias a la manipulación DOM y buenas practicas para conectar CSS, HTML y JS." width="289" height="144">
+                <img class="experience__img" src="assets/nutricion.PNG" title="Práctica Javascript donde se puede buscar pacientes de una tabla a la cual se le puede agregar más elementos gracias a la manipulación DOM y buenas practicas para conectar CSS, HTML y JS." width="289" height="144" alt="nutrition professional experience">
                 
                 <div class="experience__info">
-                    <h2 class="experience__title">Buena vida nutrición</h2>
-                    <h3 class="experience__text">Práctica Manipulación DOM - ONE latam</h3>
+                    <h2 class="experience__title" data-translate="proffesionalExpTitle7">Buena vida nutrición</h2>
+                    <h3 class="experience__text" data-translate="proffesionalExpText7">Reto Manipulación DOM</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/axlgoze/Buona_Vita_Nutrici-n"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href="https://axlgoze.github.io/Buona_Vita_Nutrici-n/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/axlgoze/Buona_Vita_Nutrici-n"><button class="experiencia__botao--repo"  data-translate="proffesionalExpRepo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href="https://axlgoze.github.io/Buona_Vita_Nutrici-n/"><button class="experience__botao--demo"  data-translate="proffesionalExpDemo">Ver demo</button></a></span>
                         </div>
                 </div>
             </div>
 
             <div class="experiencie__box experience__professional--card">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/flexboxpage.PNG" title="Práctica CSS donde se puso a prueba conocimientos del uso de Flexbox." width="289" height="144">
+                <img class="experience__img" src="assets/flexboxpage.PNG" title="Práctica CSS donde se puso a prueba conocimientos del uso de Flexbox." width="289" height="144" alt="felxbox professional experience">
                 
                 <div class="experience__info">
-                    <h2 class="experience__title">Flexbox page</h2>
-                    <h3 class="experience__text">Práctica Flexbox - ONE latam</h3>
+                    <h2 class="experience__title" data-translate="proffesionalExpTitle8">Sitio Flexbox</h2>
+                    <h3 class="experience__text" data-translate="proffesionalExpText8">Reto Flexbox</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/axlgoze/Flebox_WebSite"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href="https://axlgoze.github.io/Flebox_WebSite/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/axlgoze/Flebox_WebSite"><button class="experiencia__botao--repo" data-translate="proffesionalExpRepo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href="https://axlgoze.github.io/Flebox_WebSite/"><button class="experience__botao--demo" data-translate="proffesionalExpDemo">Ver demo</button></a></span>
                         </div>
                 </div>
             </div>
 
             <div class="experiencie__box experience__professional--card">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/gridpage.PNG" title="Práctica CSS donde se puso a prueba conocimientos del uso de GRID." width="289" height="144">
+                <img class="experience__img" src="assets/gridpage.PNG" title="Práctica CSS donde se puso a prueba conocimientos del uso de GRID." width="289" height="144" alt="grid professional experience">
                 
                 <div class="experience__info">
-                    <h2 class="experience__title">Gamestore</h2>
-                    <h3 class="experience__text">Práctica GRID css - ONE latam</h3>
+                    <h2 class="experience__title" data-translate="proffesionalExpTitle9">Tienda de juegos</h2>
+                    <h3 class="experience__text" data-translate="proffesionalExpText9">Reto GRID</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/axlgoze/Game-Store-CSS-Grid"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href="https://axlgoze.github.io/Game-Store-CSS-Grid/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/axlgoze/Game-Store-CSS-Grid"><button class="experiencia__botao--repo"  data-translate="proffesionalExpRepo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href="https://axlgoze.github.io/Game-Store-CSS-Grid/"><button class="experience__botao--demo"  data-translate="proffesionalExpDemo">Ver demo</button></a></span>
                         </div>
                 </div>
             </div>
 
             <div class="experiencie__box experience__professional--card">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/ecomerce.PNG" title="Práctica donde se integra el uso de las tecnolgias básicas del desarrollo web HTML,CSS y JS." width="289" height="144">
+                <img class="experience__img" src="assets/ecomerce.PNG" title="Práctica donde se integra el uso de las tecnolgias básicas del desarrollo web HTML,CSS y JS." width="289" height="144" alt="e-commerce professional experience">
                 
                 <div class="experience__info">
-                    <h2 class="experience__title">e-commerce</h2>
-                    <h3 class="experience__text">e-commerce Challenge - ONE latam</h3>
+                    <h2 class="experience__title" data-translate="proffesionalExpTitle10">Comercio electrónico</h2>
+                    <h3 class="experience__text" data-translate="proffesionalExpText10">Reto Comercio electrónico</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/axlgoze/Challenge_ONE_AluraGeek"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href="https://axlgoze.github.io/Challenge_ONE_AluraGeek/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/axlgoze/Challenge_ONE_AluraGeek"><button class="experiencia__botao--repo"  data-translate="proffesionalExpRepo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href="https://axlgoze.github.io/Challenge_ONE_AluraGeek/"><button class="experience__botao--demo"  data-translate="proffesionalExpDemo">Ver demo</button></a></span>
                         </div>
                 </div>
             </div>
 
             <div class="experiencie__box experience__professional--card">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img" src="assets/apeperia.PNG" title="Práctica que consistía en recrear una página web tal cual el diseño mockup y desplegarla en github pages." width="289" height="144">
+                <img class="experience__img" src="assets/apeperia.PNG" title="Práctica que consistía en recrear una página web tal cual el diseño mockup y desplegarla en github pages." width="289" height="144" alt="responsive design professional experience">
                 
                 <div class="experience__info">
-                    <h2 class="experience__title">Apeperia page</h2>
-                    <h3 class="experience__text">Responsive design Challenge - ONE latam</h3>
+                    <h2 class="experience__title" data-translate="proffesionalExpTitle11">Sitio Apeperia</h2>
+                    <h3 class="experience__text" data-translate="proffesionalExpText11">Responsive design Challenge</h3>
                         <div class="experience__description">
                             <!-- Pon el enlace del proyecto en Github o GithubPages -->
-                                <span class="experience__repo"><a href="https://github.com/axlgoze/Apeperia"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                                <span class="experience__demo"><a href="https://axlgoze.github.io/Apeperia/"><button class="experience__botao--demo">Ver demo</button></a></span>
+                                <span class="experience__repo"><a href="https://github.com/axlgoze/Apeperia"><button class="experiencia__botao--repo"  data-translate="proffesionalExpRepo">Repositório</button></a></span>
+                                <span class="experience__demo"><a href="https://axlgoze.github.io/Apeperia/"><button class="experience__botao--demo"  data-translate="proffesionalExpDemo">Ver demo</button></a></span>
                         </div>
                 </div>
             </div>
@@ -511,42 +541,82 @@
         </div> <!-- experience projects -->
         
         <div class="experience__projects2">
-            <h3 class="experience__section__title">Experiencia (otros)</h3>
+            <h3 class="experience__section__title" data-translate="expTitleSection">Experiencia (otros)</h3>
+            
             <div class="experiencie__box">
                 <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img alineado-centro" src="assets/cenart.jpg" title="Práctica que consistía en recrear una página web tal cual el diseño mockup y desplegarla en github pages." width="289" height="144">
+                <img class="experience__img alineado-centro" src="assets/bbva-logo.png" title="Práctica que consistía en recrear una página web tal cual el diseño mockup y desplegarla en github pages." width="289" height="144" alt="cenart logo">
                 
+                <div class="experiencie__box">
                 <div class="experience__info">
-                    <h2 class="experience__title">CENART</h2>
-                    <h3 class="experience__text title__subsection--italic">Programador wordpress</h3>
-                        <div class="experience__description2">
-                            <h4 class="subtitle">Actividades:</h4>
-                            <p>Mantenimiento de sitios web (Wordpress y Drupal), Actualización de información del sitio, Sugerir cambios en la estructura web, Diseño de paleta de colores, Modificación de contenido multimedia con software de edición, Gestión de plugins, Copywriting, Elaboración de manuales técnicos.</p>
-                            <h5 class="subtitle">Logros:</h5>
-                            <p>Diseño, delimitación e implementación de DRP (disasater recovery plan)</p>
-                        </div>
+                    <h2 class="experience__title" data-translate="expTitle1">BBVA | Mobile Retail</h2>
+                    <h3 class="experience__text title__subsection--italic" data-translate="expRol1">Programador front-end</h3>
+                    <div class="experience__description2">
+                        <h4 class="subtitle" data-translate="activities">Actividades:</h4>
+                        <p data-translate="activitiesExp1">Integración de desarrollos, diseño y ejecución de pruebas unitarias e integradas, ejecucion de pruebas unitarias, ejecución de pruebas funcionales en entornos previos no productivos e implantación de la solución en el entorno de producción</p>
+                        <h5 class="subtitle" data-translate="achievements">Logros:</h5>
+                        <p data-translate="expAchievements1">Certificaciones internas, certificaicon desarrollo seguro y scrum Developer</p>
+                    </div>
                 </div>
             </div>
 
             <div class="experiencie__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img alineado-centro" src="assets/mu.png" title="Práctica que consistía en recrear una página web tal cual el diseño mockup y desplegarla en github pages." width="290" height="100">
-                
+                <img class="experience__img alineado-centro" src="assets/huawei-logo.png" width="289" height="144" alt="huawei logo">
                 <div class="experience__info">
-                    <h2 class="experience__title">MSTC UPIICSA</h2>
-                    <h3 class="experience__text title__subsection--italic">Content creator, Analista, Planner</h3>
-                        <div class="experience__description2">
-                            <h4 class="subtitle">Actividades:</h4>
-                            <p>Creación de contenido para redes sociales (Facebook, instagram, Twitter) con software de edición como Illustrator y Canva. Analizar métricas sobre respuesta de publico objetivo. Planeación mensual de contenido a ser publicado en redes sociales y asignación de tareas a equipo.</p>
-                            <h5 class="subtitle">Logros:</h5>
-                            <p>Innovación de diseño de publicaciones,buenos resultados de alcance en la comunidad</p>
-                        </div>
+                    <h2 class="experience__title" data-translate="expTitle2">HUAWEI | Cloud</h2>
+                    <h3 class="experience__text title__subsection--italic" data-translate="expRol2">Technical Account Manager</h3>
+                    <div class="experience__description2">
+                        <h4 class="subtitle" data-translate="activities">Actividades:</h4>
+                        <p data-translate="activitiesExp2">Gestión de infraestructura mediante el monitoreo de recursos para identificar áreas de oportunidad e incidencias. Diseño, implementación y seguimiento de planes de despliegue en Huawei Cloud para clientes directos y partners. seguimiento migracion migración de arquitecturas cloud. Facilitador técnico en el despliegue de recursos de nube a través de acompañamiento personalizado y soporte preventa/posventa.</p>
+                        <h5 class="subtitle" data-translate="achievements">Logros:</h5>
+                        <p data-translate="expAchievements2">Intership completado, certifiacion HCIA</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experiencie__box">
+                <img class="experience__img alineado-centro" src="assets/C5.jpg" width="289" height="144" alt="c5 logo">
+                <div class="experience__info">
+                    <h2 class="experience__title" data-translate="expTitle3">C5 | Monitoreo Inteligente</h2>
+                    <h3 class="experience__text title__subsection--italic" data-translate="expRol3">Programador python / Sys Admin</h3>
+                    <div class="experience__description2">
+                        <h4 class="subtitle" data-translate="activities">Actividades:</h4>
+                        <p data-translate="activitiesExp3">Mantenimiento de sitios web (Wordpress y Drupal), Actualización de información del sitio, Sugerir cambios en la estructura web, Diseño de paleta de colores, Modificación de contenido multimedia con software de edición, Gestión de plugins, Copywriting, Elaboración de manuales técnicos.</p>
+                        <h5 class="subtitle" data-translate="achievements">Logros:</h5>
+                        <p data-translate="expAchievements3">Diseño, delimitación e implementación de DRP (disasater recovery plan)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experiencie__box">
+                <img class="experience__img alineado-centro" src="assets/cenart.jpg" width="289" height="144" alt="cenart logo">
+                <div class="experience__info">
+                    <h2 class="experience__title" data-translate="expTitle4">CENART | Estudios Interdisciplinarios</h2>
+                    <h3 class="experience__text title__subsection--italic" data-translate="expRol4">Programador wordpress</h3>
+                    <div class="experience__description2">
+                        <h4 class="subtitle" data-translate="activities">Actividades:</h4>
+                        <p data-translate="activitiesExp4">Mantenimiento de sitios web (Wordpress y Drupal), Actualización de información del sitio, Sugerir cambios en la estructura web, Diseño de paleta de colores, Modificación de contenido multimedia con software de edición, Gestión de plugins, Copywriting, Elaboración de manuales técnicos.</p>
+                        <h5 class="subtitle" data-translate="achievements">Logros:</h5>
+                        <p data-translate="expAchievements4">Diseño, delimitación e implementación de DRP (disasater recovery plan)</p>
+                    </div>
                 </div>
             </div>
 
             <div class="experiencie__box">
-                <!-- Pon el logotipo/captura de pantalla de tu proyecto -->
-                <img class="experience__img alineado-centro" src="assets/ca.png" title="Práctica que consistía en recrear una página web tal cual el diseño mockup y desplegarla en github pages." width="290" height="100">
+                <img class="experience__img alineado-centro" src="assets/mu.png" width="290" height="100" alt="MSTC UPIICSA logo">
+                <div class="experience__info">
+                    <h2 class="experience__title" data-translate="expTitle5">MSTC UPIICSA | Social Media</h2>
+                    <h3 class="experience__text title__subsection--italic" data-translate="expRol5">Content creator, Analista, Planner</h3>
+                    <div class="experience__description2">
+                        <h4 class="subtitle" data-translate="activities">Actividades:</h4>
+                        <p data-translate="activitiesExp5">Creación de contenido para redes sociales (Facebook, instagram, Twitter) con software de edición como Illustrator y Canva. Analizar métricas sobre respuesta de publico objetivo. Planeación mensual de contenido a ser publicado en redes sociales y asignación de tareas a equipo.</p>
+                        <h5 class="subtitle" data-translate="achievements">Logros:</h5>
+                        <p data-translate="expAchievements5">Innovación de diseño de publicaciones,buenos resultados de alcance en la comunidad</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="experiencie__box">
+                <img class="experience__img alineado-centro" src="assets/ca.png" title="Práctica que consistía en recrear una página web tal cual el diseño mockup y desplegarla en github pages." width="290" height="100" alt="Alison logo">
                 
                 <div class="experience__info">
                     <h2 class="experience__title">Restaurante Alison (negocio familiar)</h2>
@@ -558,7 +628,7 @@
                             <p>Implementación de sistema de notas, digitalización de información contable.</p>
                         </div>
                 </div>
-            </div>
+            </div> -->
 
 
         </div>
@@ -567,85 +637,88 @@
 
 
     <section class="languages" id="languages">
-        <h3 class="languages__title">Idiomas</h3>
+        <h3 class="languages__title" data-translate="languagesTitle">Idiomas</h3>
             <div class="languages__line">
                 <div class="languages__box zoom">
                     <ul>
-                        <li class="languages__img"><img src="assets\ue.png"></li>
-                        <li class="languages__name">Ingles (B2)</li>
+                        <li class="languages__img"><img src="assets\ue.png" alt="english pronunciation"></li>
+                        <li class="languages__name" data-translate="englishLevel">Ingles (B2)</li>
                     </ul>
                 </div>
 
                 <div class="languages__box zoom">
                     <ul>
-                        <li class="languages__img"><img src="assets\mxflag.png"></li>
-                        <li class="languages__name">Español (nativo)</li>
+                        <li class="languages__img"><img src="assets\mxflag.png" alt="mexico flag"></li>
+                        <li class="languages__name" data-translate="spanishLevel">Español (nativo)</li>
                     </ul>
                 </div>
+            </div>
     </section>
 
     <section class="intereses" id="intereses">
-        <h3 class="intereses__title">intereses</h3>
+        <h3 class="intereses__title" data-translate="interestsTitle">intereses</h3>
             <div class="intereses__line">
                 <div class="intereses__box zoom">
                     <ul>
-                        <li class="intereses__img"><img src="assets\knight.png"></li>
-                        <li class="intereses__name">Estrategia y Planeación</li>
+                        <li class="intereses__img"><img src="assets\knight.png" alt="chess horse"></li>
+                        <li class="intereses__name" data-translate="interest1">Estrategia y Planeación</li>
                     </ul>
                 </div>
                 <div class="intereses__box zoom">
                     <ul>
-                        <li class="intereses__img"><img src="assets\stones.png"></li>
-                        <li class="intereses__name">Misticismo y Espíritualidad</li>
+                        <li class="intereses__img"><img src="assets\stones.png" alt="rocks"></li>
+                        <li class="intereses__name" data-translate="interest2">Misticismo y Espíritualidad</li>
                     </ul>
                 </div>
                 <div class="intereses__box zoom">
                     <ul>
-                        <li class="intereses__img"><img src="assets\psychology.png"></li>
-                        <li class="intereses__name">Psicología y Filosofía</li>
+                        <li class="intereses__img"><img src="assets\psychology.png" alt="psychology"></li>
+                        <li class="intereses__name" data-translate="interest3">Psicología</li>
                     </ul>
                 </div>
                 <div class="intereses__box zoom">
                     <ul>
-                        <li class="intereses__img"><img src="assets\palette.png"></li>
-                        <li class="intereses__name">Tecnología y Artes</li>
+                        <li class="intereses__img"><img src="assets\palette.png" alt="colours"></li>
+                        <li class="intereses__name" data-translate="interest4">Tecnología y Artes</li>
                     </ul>
                 </div>
+            </div>
     </section>
-        <!-- Sección de Contacto -->
-        <section class="formcontato" id="contacto">
-            <div  class="formcontato__contacto">
-                <!-- <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
-                </div> -->
-                <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contacto</h2>
-                    <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
-                    <h3 class="formcontato__subtext" id="subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
-                    <form class="formcontato__form" name="form">
-                        <p class="formcontato__input--title">Nombre</p>
-                        <input class="formcontato__input" type="text" name="nombre"  id="name" required maxlength="50">
-                        <p class="formcontato__input--title2">E-mail</p>
-                        <input class="formcontato__input" type="email" name="email" id="mail" required>
-                        <p class="formcontato__input--title3">Asunto</p>
-                        <input class="formcontato__input" type="text" name="asunto" id="text" required maxlength="50">
-                        <p class="formcontato__input--title4">Mensaje</p>
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" required maxlength="300"></textarea>
-                        <button onclick="verificando()" name="enviaForm" type="submit" class="formcontato__botao">Enviar mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </section>
 
-        <!-- Sección de Footer -->
-        <section class="footer">
-            <div class="footer__rodape">
-                <p>Desarrollado por <br> Reyes Flores Brayan Axel</p>
-                <p>2023</p>
+    <section class="formcontato" id="contacto">
+        <div class="formcontato__contacto">
+            <div class="formcontato__text">
+                <h2 class="formcontato__title" data-translate="contactTitle">Contacto</h2>
+                <h3 class="formcontato__subtext" data-translate="contactQuestion">¿Quieres contactarme?</h3>
+                <h3 class="formcontato__subtext" id="subtext" data-translate="contactSubtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
+                
+                <form class="formcontato__form" name="form">
+                    <p class="formcontato__input--title" data-translate="formName">Nombre</p>
+                    <input class="formcontato__input" type="text" name="nombre" id="name" required maxlength="50">
+                    
+                    <p class="formcontato__input--title2" data-translate="formEmail">E-mail</p>
+                    <input class="formcontato__input" type="email" name="email" id="mail" required>
+                    
+                    <p class="formcontato__input--title3" data-translate="formSubject">Asunto</p>
+                    <input class="formcontato__input" type="text" name="asunto" id="text" required maxlength="50">
+                    
+                    <p class="formcontato__input--title4" data-translate="formMessage">Mensaje</p>
+                    <textarea class="formcontato__textarea" rows="5" cols="40" id="text-message" name="mensaje" required maxlength="300"></textarea>
+                    
+                    <button onclick="verificando()" name="enviaForm" type="submit" class="formcontato__botao" data-translate="formBtn">Enviar mensaje</button>
+                </form>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="footer__rodape">
+            <p><span data-translate="footerDev">Desarrollado por</span> <br> Reyes Flores Brayan Axel</p>
+            <p>2026</p>
+        </div>
+    </section>
     </div>
 <!-- Script del documento JavaScript -->
-<script src="JS/validacion.js"></script>
+<script type="module" src="JS/validacion.js"></script>
 </body>
 </html>

@@ -82,3 +82,17 @@
 /*Contacto*/
 
 /*Footer*/
+
+.language-switcher {
+    margin-left: auto;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.language-switcher {
+    font-size: 1.8rem;
+    padding: 10px;
+    margin-right: 30px;
+}

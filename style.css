@@ -751,51 +751,18 @@ section.footer{
 .zoom:hover{
     transform: scale(1.1);
 }
-/* Vamos a desafiarnos trabajando con responsividad?
-Utiliza las referencias de los breakpoints @media abajo */
-
-
-/*Tablet*/
-@media (min-width: 768px) {
-
-/* Menú */
-
-/*title*/
-
-/*skills*/
-
-/*competencias*/
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
-}
 
 .tudo{
     min-width: 320px;
     max-width: 425px;
     margin: 0 auto;
 }
-/*Mobile*/
-@media (min-width: 425px) {
 
-/*Menu*/
-
-/*Titulo*/
-
-/*Sección sobre mi*/
-
-/*Skills*/
-
-/*competencias*/
-
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
-/*Contacto*/
-
-/*Footer*/
-
+.language-switcher {
+    margin-left: auto;
+    padding: 5px;
+    margin-left: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
